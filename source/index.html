@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Drink2Goв</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="./js/script.js"></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__wrapper">
+        <a class="main-nav__logo" tabindex="0">
+          <picture>
+            <source media="(min-width:1440px)" srcset="images/svg/logo-desktop.svg" width="170" height="36">
+            <source media="(min-width:768px)" srcset="images/svg/logo-tablet.svg" width="82" height="36">
+            <img src="images/svg/logo.svg" width="32" height="36" alt="Логотип Drink2Go.">
+          </picture>
+        </a>
+        <h1 class="main-nav__slogan">Интернет-магазин кофейных напитков</h1>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__link-icon" width="16" height="16">
+                <use xlink:href="images/sprite.svg#user"></use>
+              </svg>
+              <span class="user-list__link-text">Войти</span>
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__link-icon" width="16" height="16">
+                <use xlink:href="images/sprite.svg#basket"></use>
+              </svg>
+              <span class="user-list__link-text">Корзина</span>
+            </a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active" href="#">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Каталог</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Доставка</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">О нас</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+</body>
+
 </html>
