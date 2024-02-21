@@ -9,8 +9,8 @@
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="./js/script.js"></script>
 </head>
 
 <body class="page__body">
@@ -19,9 +19,9 @@
       <div class="main-nav__wrapper">
         <a class="main-nav__logo" tabindex="0">
           <picture>
-            <source media="(min-width:1440px)" srcset="images/svg/logo-desktop.svg" width="170" height="36">
-            <source media="(min-width:768px)" srcset="images/svg/logo-tablet.svg" width="82" height="36">
-            <img src="images/svg/logo.svg" width="32" height="36" alt="Логотип Drink2Go.">
+            <source media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="170" height="36">
+            <source media="(min-width:768px)" srcset="images/logo-tablet.svg" width="82" height="36">
+            <img src="images/logo.svg" width="32" height="36" alt="Логотип Drink2Go.">
           </picture>
         </a>
         <h1 class="main-nav__slogan">Интернет-магазин кофейных напитков</h1>
@@ -65,6 +65,103 @@
   </header>
   <div class="wrapper">
     <main class="main">
+      <section class="promo">
+        <h2 class="visually-hidden">Слайдер с новинками</h2>
+        <section class="slider swiper">
+          <ul class="slider__list swiper-wrapper">
+            <li class="slider__item slider__item--white swiper-slide">
+              <div class="slider__item-inner">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/flat-desktop.webp, images/flat-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/flat-tablet.webp, images/flat-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="images/flat-mobile.webp, images/flat-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)" srcset="images/flat-desktop.png, images/flat-desktop.png 2x">
+                  <source media="(min-width: 768px)" srcset="images/flat-tablet.png, images/flat-tablet.png 2x">
+                  <img class="slider__item-img" src="images/flat-mobile.png" srcset="images/flat-mobile@2x.png 2x" alt="Фото кофе." width="280" height="280">
+                </picture>
+                <div class="slider__description-wrapper">
+                  <span class="slider__badge">Новинка!</span>
+                  <h2 class="slider__heading">Декаф Флэт Уайт</h2>
+                  <p class="slider__description">
+                    Свежесваренный кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком — то, что нужно для
+                    расслабления после тяжёлого рабочего дня
+                  </p>
+                  <div class="slider__buy">
+                    <div class="slider__price-wrapper">
+                      <span class="slider__old-price">295₽</span>
+                      <span class="slider__price">225₽</span>
+                    </div>
+                    <a class="slider__button" href="#catalog">Заказать</a>
+                  </div>
+                </div>
+              </div>
+
+            </li>
+            <li class="slider__item slider__item--violet swiper-slide">
+              <div class="slider__item-inner">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/latte-desktop.webp, images/latte-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/latte-tablet.webp, images/latte-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="images/latte-mobile.webp, images/latte-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)" srcset="images/latte-desktop.png, images/latte-desktop.png 2x">
+                  <source media="(min-width: 768px)" srcset="images/latte-tablet.png, images/latte-tablet.png 2x">
+                  <img class="slider__item-img" src="images/latte-mobile.png" srcset="images/latte-mobile@2x.png 2x" alt="Фото кофе." width="280" height="280">
+                </picture>
+                <div class="slider__description-wrapper">
+                  <span class="slider__badge">Новинка!</span>
+                  <h2 class="slider__heading">Лавандовый Латте</h2>
+                  <p class="slider__description">
+                    Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+                  </p>
+                  <div class="slider__buy">
+                    <div class="slider__price-wrapper">
+                      <span class="slider__old-price">285₽</span>
+                      <span class="slider__price">265₽</span>
+                    </div>
+                    <a class="slider__button" href="#">Заказать</a>
+                  </div>
+                </div>
+              </div>
+
+            </li>
+            <li class="slider__item slider__item--black swiper-slide">
+              <div class="slider__item-inner">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/espresso-desktop.webp, images/espresso-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/espresso-tablet.webp, images/espresso-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="images/espresso-mobile.webp, images/espresso-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)" srcset="images/espresso-desktop.png, images/espresso-desktop.png 2x">
+                  <source media="(min-width: 768px)" srcset="images/espresso-tablet.png, images/espresso-tablet.png 2x">
+                  <img class="slider__item-img" src="images/espresso-mobile.png" srcset="images/espresso-mobile@2x.png 2x" alt="Фото кофе." width="280" height="280">
+                </picture>
+                <div class="slider__description-wrapper">
+                  <span class="slider__badge">Новинка!</span>
+                  <h2 class="slider__heading">Тройной Эспрессо</h2>
+                  <p class="slider__description">
+                    Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+                  </p>
+                  <div class="slider__buy">
+                    <div class="slider__price-wrapper">
+                      <span class="slider__old-price">395₽</span>
+                      <span class="slider__price">375₽</span>
+                    </div>
+                    <a class="slider__button" href="#">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="slider__arrows">
+            <button class="slider__arrow slider__arrow--left swiper-button-prev" type="button"></button>
+            <button class="slider__arrow slider__arrow--right swiper-button-next" type="button"></button>
+          </div>
+          <div class="slider__bullets swiper-pagination"></div>
+
+        </section>
+      </section>
       <section class="features">
         <div class="features__wrapper container">
           <h2 class="features__tittle">Преимущества</h2>
@@ -111,6 +208,9 @@
       </section>
     </main>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>

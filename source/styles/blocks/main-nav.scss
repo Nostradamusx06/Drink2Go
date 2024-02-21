@@ -62,7 +62,7 @@
   width: 16px;
   height: 12px;
   border: none;
-  background-position: center;
+  background-position: 22px 24px;
   background-color: transparent;
   top: 0;
   right: 0;
@@ -79,14 +79,14 @@
 .main-nav--closed .main-nav__toggle {
   width: 16px;
   height: 12px;
-  background-image: url("../images/sprite.svg#burger");
+  background-image: url("../../images/sprite.svg#burger");
   background-repeat: no-repeat;
 }
 
 .main-nav--opened .main-nav__toggle {
   width: 18px;
   height: 21px;
-  background-image: url("../images/sprite.svg#close-icon");
+  background-image: url("../../images/sprite.svg#close-icon");
   background-repeat: no-repeat;
 }
 
