@@ -1,0 +1,86 @@
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 41px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.sorting__wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sorting__text {
+  font-family: $montserrat-semi-bold;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 4px;
+}
+
+.sorting__select {
+  position: relative;
+  margin-left: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.sorting__select svg {
+  position: absolute;
+  top: 56%;
+  transform: translateY(-50%);
+  right: 11px;
+  
+  &:active {
+    .sorting__select svg {
+      transform: scaleY(-1);
+    }
+  }
+}
+
+.sorting__values {
+  display: block;
+  font-family: $montserrat-semi-bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-primary;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  appearance: none;
+  height: 32px;
+  width: 165px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $base-secondary;
+    
+  }
+}
+
+.sorting__control {
+  font-family: $montserrat-regular;
+  color: $base-black;
+  font-size: 16px;
+  line-height: 24px;
+}

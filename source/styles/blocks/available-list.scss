@@ -1,0 +1,55 @@
+.available-list {
+  margin: 23px 0 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 19px 0 0;
+  }
+}
+
+.available-list__item {
+  font-family: $montserrat-regular;
+  font-size: 16px;
+  line-height: 24px;
+  list-style: none;
+}
+
+.available-list__label {
+  position: relative;
+  display: block;
+  padding-left: 34px;
+  padding-bottom: 21px;
+  cursor: pointer;
+}
+
+.available-list__radio {
+  width: 24px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../images/sprite.svg#radio-unchecked") no-repeat 0 0;
+}
+
+
+.available-list__input:checked + .available-list__radio {
+  background-image: url("../../images/sprite.svg#radio-checked");
+}
+
+.available-list__input:not(:checked):hover + .available-list__radio {
+  background-image: url("../../images/sprite.svg#radio-hover-focus");
+}
+
+.available-list__input:disabled + .available-list__radio,
+.available-list__input:disabled:hover + .available-list__radio {
+  background-image: url("../../images/sprite.svg#radio-disabled");
+}
+
+.available-list__input:checked:disabled + .available-list__radio {
+  background-image: url("../../images/sprite.svg#radio-disabled-checked");
+}
+
+.available-list__input:disabled ~ .available-list__text,
+.available-list__input:not(:checked):disabled:hover ~ .available-list__text {
+  color: $base-grey;
+}

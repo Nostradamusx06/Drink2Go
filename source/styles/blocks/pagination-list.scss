@@ -1,0 +1,125 @@
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    justify-content: flex-end;
+    padding-top: 72px;
+    margin: 0 0 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+  }
+}
+
+.pagination-list__item {
+  position: relative;
+  display: flex;
+  color: $base-primary;
+  background-color: $white;
+  align-items: center;
+  font-family: $montserrat-regular;
+  font-size: 16px;
+  line-height: 24px;
+
+  border-radius: 4px;
+  list-style: none;
+  text-decoration: none;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+
+  &--current {
+    background-color: $lightest-grey;
+    color: $base-black;
+  }
+}
+
+.pagination-list__link {
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &--disabled {
+    background-color: $light-grey;
+    color: $white;
+    cursor: not-allowed;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $light-grey;
+      color: $white;
+      cursor: not-allowed;
+    }
+  }
+
+  &--prev {
+    @media (min-width: $tablet-width) {
+      padding: 5px 20px;
+    }
+  }
+
+  &--next {
+    @media (min-width: $tablet-width) {
+      padding: 5px 20px;
+    }
+  }
+
+  &--current {
+    cursor: auto;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+      color: $base-black;
+      cursor: auto;
+    }
+  }
+}
+
+.pagination-list__link-icon {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &--next {
+    transform: rotate(180deg);
+  }
+}
+
+.pagination-list__link span {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
