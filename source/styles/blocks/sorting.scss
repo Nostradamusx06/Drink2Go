@@ -38,19 +38,6 @@
   }
 }
 
-.sorting__select svg {
-  position: absolute;
-  top: 56%;
-  transform: translateY(-50%);
-  right: 11px;
-  
-  &:active {
-    .sorting__select svg {
-      transform: scaleY(-1);
-    }
-  }
-}
-
 .sorting__values {
   display: block;
   font-family: $montserrat-semi-bold;
@@ -66,6 +53,7 @@
   appearance: none;
   height: 32px;
   width: 165px;
+  border-radius: 4px;
 
   @media (min-width: $tablet-width) {
     padding-left: 10px;
@@ -74,7 +62,6 @@
   &:hover,
   &:focus {
     background-color: $base-secondary;
-    
   }
 }
 
