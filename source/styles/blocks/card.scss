@@ -1,0 +1,87 @@
+.card {
+  background-color: $white;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+  }
+}
+
+.card__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 27px;
+  }
+}
+
+.card__title {
+  font-family: $montserrat-bold;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.card__description {
+  font-family: $montserrat-regular;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 4px 0 19px;
+  }
+}
+
+.card__buy {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__price {
+  font-family: $montserrat-semi-bold;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.card__button {
+  width: 140px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  font-family: $montserrat-regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white;
+  background-color: $base-primary;
+  border-radius: 4px;
+
+  &:not(.card__button--disabled):hover,
+  &:not(.card__button--disabled):focus {
+    background-color: $primary-lighter;
+  }
+
+  &:not(.card__button--disabled):active {
+    background-color: $primary-darker;
+  }
+
+  &--disabled {
+    background-color: $base-grey;
+    cursor: not-allowed;
+  }
+}

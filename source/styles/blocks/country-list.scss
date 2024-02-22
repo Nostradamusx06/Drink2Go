@@ -1,0 +1,57 @@
+.country-list {
+  margin: 22px 0 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 19px 0 0;
+  }
+}
+
+.country-list__item {
+  font-family: $montserrat-regular;
+  font-size: 16px;
+  line-height: 24px;
+  list-style: none;
+}
+
+.country-list__label {
+  position: relative;
+  display: block;
+  padding-left: 54px;
+  padding-bottom: 21px;
+  cursor: pointer;
+}
+
+.country-list__input {
+  appearance: none;
+}
+
+.country-list__checkbox {
+  width: 42px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../images/sprite.svg#checkbox-unchecked") no-repeat 0 0;
+}
+
+.country-list__input:checked + .country-list__checkbox {
+  background-image: url("../../images/sprite.svg#checkbox-checked");
+}
+
+.country-list__input:not(:checked):hover + .country-list__checkbox {
+  background-image: url("../../images/sprite.svg#checkbox-hover-focus");
+}
+
+.country-list__input:disabled + .country-list__checkbox {
+  background-image: url("../../images/sprite.svg#checkbox-disabled");
+}
+
+.country-list__input:not(:checked):disabled + .country-list__checkbox {
+  background-image: url("../../images/sprite.svg#checkbox-unchecked-disabled");
+}
+
+.country-list__input:disabled ~ .country-list__text,
+.country-list__input:not(:checked):disabled:hover ~ .country-list__text {
+  color: $base-grey;
+}
