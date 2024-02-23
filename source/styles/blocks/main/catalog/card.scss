@@ -30,9 +30,13 @@
     font-size: 24px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 4px;
+  }
 }
 
-.card__description {
+ .card__description {
   font-family: $montserrat-regular;
   font-size: 14px;
   line-height: 20px;
@@ -41,6 +45,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 4px 0 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
   }
 }
 
