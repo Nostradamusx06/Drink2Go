@@ -1,27 +1,37 @@
 /* GLOBAL */
-@import "./global/variables.scss";
-@import "./global/global.scss";
-@import "./global/fonts.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
-@import "blocks/main";
-@import "blocks/container";
-@import "blocks/main-nav";
-@import "blocks/user-list";
-@import "blocks/site-list";
-@import "blocks/wrapper";
-@import "blocks/features";
-@import "blocks/slider";
-@import "blocks/catalog";
-@import "blocks/card";
-@import "blocks/filter";
-@import "blocks/sorting";
-@import "blocks/available-list";
-@import "blocks/country-list";
-@import "blocks/product-list";
-@import "blocks/pagination-list";
-@import "blocks/map";
+@import "blocks/header/header.scss";
+@import "blocks/header/main-nav.scss";
+@import "blocks/header/user-list.scss";
+@import "blocks/header/site-list.scss";
+@import "blocks/main/main.scss";
+@import "blocks/main/catalog/container.scss";
+@import "blocks/main/wrapper.scss";
+@import "blocks/main/features/features.scss";
+@import "blocks/main/promo/slider.scss";
+@import "blocks/main/catalog/catalog.scss";
+@import "blocks/main/catalog/card.scss";
+@import "blocks/main/catalog/filter.scss";
+@import "blocks/main/catalog/sorting.scss";
+@import "blocks/main/catalog/available-list.scss";
+@import "blocks/main/catalog/country-list.scss";
+@import "blocks/main/catalog/product-list.scss";
+@import "blocks/main/catalog/pagination-list.scss";
+@import "blocks/main/map/map.scss";
+@import "blocks/footer/footer.scss";
+@import "blocks/footer/footer-nav.scss";
+@import "blocks/footer/social-list.scss";
+@import "blocks/footer/contacts-list.scss";
+@import "blocksfooter//copyryght.scss";
+
+
+
+
+
 
 
 
