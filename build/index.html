@@ -10,6 +10,7 @@
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="vendor/nouislider.min.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -218,110 +219,102 @@
 
               <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
 
-                <div class="filter__price">
-                  <p class="filter__heading">Цена</p>
-                  <div class="filter__range">
-                    <div class="filter__range-controls">
-                      <div class="filter__range-scale">
-                        <div class="filter__range-bar"></div>
-                      </div>
-                      <div class="filter__range-toggles">
-                        <div class="filter__range-toggle filter__range-toggle--min"></div>
-                        <div class="filter__range-toggle filter__range-toggle--max"></div>
-                      </div>
-                    </div>
-                    <div class="filter__price-controls">
-                      <input class="filter__price-control filter__price-control--min" type="text" value="0">
-                      <span class="filter__price-control-divider"></span>
-                      <input class="filter__price-control filter__price-control--max" type="text" value="900">
+                <div class="filters__item filters-price">
+                  <h3 class="filters-price__title">Цена</h3>
+                  <div class="filters-price__slider" id="range-slider"></div>
+                  <div class="filters-price__inputs">
+                    <label class="filters-price__label filters-price__label--empty">
+                      <input type="number" min="0" max="1000" placeholder="0" class="filters-price__input filters-price__input--min" id="input-min">
+                    </label>
+                    <label class="filters-price__label">
+                      <input type="number" min="0" max="1000" placeholder="900" class="filters-price__input filters-price__input--max" id="input-max">
+                    </label>
+                  </div>
+
+                  <div class="filter__fieldsets">
+                    <fieldset class="filter__fieldset filter__fieldset--available">
+                      <legend class="filter__heading">Наличие молока</legend>
+                      <ul class="available-list">
+                        <li class="available-list__item">
+                          <label class="available-list__label">
+                            <input class="available-list__input visually-hidden" type="radio" name="radio" value="Неважно" checked="checked">
+                            <span class="available-list__radio"></span>
+                            <span class="available-list__text">Неважно</span>
+                          </label>
+                        </li>
+                        <li class="available-list__item">
+                          <label class="available-list__label">
+                            <input class="available-list__input visually-hidden" type="radio" name="radio" value="Только животное">
+                            <span class="available-list__radio"></span>
+                            <span class="available-list__text">Только животное</span>
+                          </label>
+                        </li>
+                        <li class="available-list__item">
+                          <label class="available-list__label">
+                            <input class="available-list__input visually-hidden" type="radio" name="radio" value="Только растительное">
+                            <span class="available-list__radio"></span>
+                            <span class="available-list__text">Только растительное</span>
+                          </label>
+                        </li>
+                        <li class="available-list__item">
+                          <label class="available-list__label">
+                            <input class="available-list__input visually-hidden" type="radio" name="radio" value="Без молока" disabled="disabled">
+                            <span class="available-list__radio"></span>
+                            <span class="available-list__text">Без молока</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </fieldset>
+                    <fieldset class="filter__fieldset filter__fieldset--country">
+                      <legend class="filter__heading">Страна произрастания</legend>
+                      <ul class="country-list">
+                        <li class="country-list__item">
+                          <label class="country-list__label">
+                            <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Не важно" checked="checked">
+                            <span class="country-list__checkbox"></span>
+                            <span class="country-list__text">Бразилия</span>
+                          </label>
+                        </li>
+                        <li class="country-list__item">
+                          <label class="country-list__label">
+                            <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Только животное">
+                            <span class="country-list__checkbox"></span>
+                            <span class="country-list__text">Эфиопия</span>
+                          </label>
+                        </li>
+                        <li class="country-list__item">
+                          <label class="country-list__label">
+                            <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Только растительное">
+                            <span class="country-list__checkbox"></span>
+                            <span class="country-list__text">Колумбия</span>
+                          </label>
+                        </li>
+                        <li class="country-list__item">
+                          <label class="country-list__label">
+                            <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Без молока">
+                            <span class="country-list__checkbox"></span>
+                            <span class="country-list__text">Коста-Рика</span>
+                          </label>
+                        </li>
+                        <li class="country-list__item">
+                          <label class="country-list__label">
+                            <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Без молока" disabled="disabled">
+                            <span class="country-list__checkbox"></span>
+                            <span class="country-list__text">Перу</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </fieldset>
+                  </div>
+
+                  <div class="filter__buttons">
+                    <div class="filter__buttons-wrapper">
+                      <button class="filter__button filter__button--apply" type="submit">Применить</button>
+                      <button class="filter__button filter__button--reset" type="reset">Сбросить</button>
                     </div>
                   </div>
-                </div>
 
-                <div class="filter__fieldsets">
-                  <fieldset class="filter__fieldset filter__fieldset--available">
-                    <legend class="filter__heading">Наличие молока</legend>
-                    <ul class="available-list">
-                      <li class="available-list__item">
-                        <label class="available-list__label">
-                          <input class="available-list__input visually-hidden" type="radio" name="radio" value="Неважно" checked="checked">
-                          <span class="available-list__radio"></span>
-                          <span class="available-list__text">Неважно</span>
-                        </label>
-                      </li>
-                      <li class="available-list__item">
-                        <label class="available-list__label">
-                          <input class="available-list__input visually-hidden" type="radio" name="radio" value="Только животное">
-                          <span class="available-list__radio"></span>
-                          <span class="available-list__text">Только животное</span>
-                        </label>
-                      </li>
-                      <li class="available-list__item">
-                        <label class="available-list__label">
-                          <input class="available-list__input visually-hidden" type="radio" name="radio" value="Только растительное">
-                          <span class="available-list__radio"></span>
-                          <span class="available-list__text">Только растительное</span>
-                        </label>
-                      </li>
-                      <li class="available-list__item">
-                        <label class="available-list__label">
-                          <input class="available-list__input visually-hidden" type="radio" name="radio" value="Без молока" disabled="disabled">
-                          <span class="available-list__radio"></span>
-                          <span class="available-list__text">Без молока</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                  <fieldset class="filter__fieldset filter__fieldset--country">
-                    <legend class="filter__heading">Страна произрастания</legend>
-                    <ul class="country-list">
-                      <li class="country-list__item">
-                        <label class="country-list__label">
-                          <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Не важно" checked="checked">
-                          <span class="country-list__checkbox"></span>
-                          <span class="country-list__text">Бразилия</span>
-                        </label>
-                      </li>
-                      <li class="country-list__item">
-                        <label class="country-list__label">
-                          <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Только животное">
-                          <span class="country-list__checkbox"></span>
-                          <span class="country-list__text">Эфиопия</span>
-                        </label>
-                      </li>
-                      <li class="country-list__item">
-                        <label class="country-list__label">
-                          <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Только растительное">
-                          <span class="country-list__checkbox"></span>
-                          <span class="country-list__text">Колумбия</span>
-                        </label>
-                      </li>
-                      <li class="country-list__item">
-                        <label class="country-list__label">
-                          <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Без молока">
-                          <span class="country-list__checkbox"></span>
-                          <span class="country-list__text">Коста-Рика</span>
-                        </label>
-                      </li>
-                      <li class="country-list__item">
-                        <label class="country-list__label">
-                          <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Без молока" disabled="disabled">
-                          <span class="country-list__checkbox"></span>
-                          <span class="country-list__text">Перу</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </div>
-
-                <div class="filter__buttons">
-                  <div class="filter__buttons-wrapper">
-                    <button class="filter__button filter__button--apply" type="submit">Применить</button>
-                    <button class="filter__button filter__button--reset" type="reset">Сбросить</button>
-                  </div>
-                </div>
-
-              </form>
+              </div></form>
             </section>
 
             <section class="catalog__list">
@@ -618,7 +611,9 @@
     </footer>
   </div>
 
+  <script src="vendor/nouislider.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="scripts/range-slider.js"></script>
   <script src="scripts/index.js"></script>
 </body>
 
