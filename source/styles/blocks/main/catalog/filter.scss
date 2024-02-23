@@ -5,7 +5,7 @@
       "price fieldsets"
       "buttons buttons";
     grid-template-columns: 230px 1fr;
-    column-gap: 20px;
+    column-gap: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,7 +27,7 @@
   @media (min-width: $tablet-width) {
     grid-area: fieldsets;
     display: flex;
-    gap: 36px;
+    gap: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,10 +43,18 @@
 
   &--available {
     margin-top: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
   }
 
   &--country {
     margin-top: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
 
     @media (min-width: $desktop-width) {
       margin-top: 7px;
@@ -62,10 +70,8 @@
   @media (min-width: $tablet-width) {
     grid-area: buttons;
     margin-top: 16px;
-  }
-
-  @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -75,8 +81,8 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin-right: 52px;
-    gap: 30px;
+    width: 277px;
+    justify-content: space-between; 
   }
 
   @media (min-width: $desktop-width) {
@@ -118,8 +124,7 @@
     margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
-      font-size: 14px;
-      width: 149px;
+      width: 137px;
       margin-bottom: 0;
     }
 
@@ -144,7 +149,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      width: 138px;
+      width: 120px;
     }
 
     @media (min-width: $desktop-width) {
@@ -153,8 +158,16 @@
   }
 }
 
+.filters-price {
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+  }
+}
+
 .filters-price__inputs {
   display: flex;
+  width: 222.5px;
   position: relative;
   justify-content: space-between;
 }
@@ -169,10 +182,22 @@
   padding: 9px 39.5px 6px;
   margin-top: 13px;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 87px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 8px 23.5px 6px;
+  }
+
 }
 
-.filters-price__label--empty{
+.filters-price__label--empty {
   padding: 9px 49.5px 6px;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 34.5px 7px;
+  }
 }
 
 .filters-price__input {
@@ -202,7 +227,7 @@
   width: 8px;
   top: 64%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background-color: #bdbdbd;
 }
 
@@ -252,4 +277,8 @@
 
 .noUi-horizontal .noUi-handle-upper {
   right: -8px;
+
+  @media (min-width: $tablet-width) {
+    right: -2.5px;
+  }
 }
