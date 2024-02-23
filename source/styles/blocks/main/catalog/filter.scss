@@ -57,8 +57,7 @@
 .filter__buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 12px;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     grid-area: buttons;
@@ -87,11 +86,11 @@
 }
 
 .filter__button {
-  width: 160px;
+  width: auto;
   font-family: $montserrat-regular;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  padding: 10px 9px;
+  padding: 8px 9px;
   border: 0;
   border-radius: 4px;
 
@@ -114,10 +113,9 @@
   }
 
   &--apply {
-    font-size: 13px;
     color: $white;
     background-color: $base-primary;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
       font-size: 14px;
@@ -157,6 +155,7 @@
 
 .filters-price__inputs {
   display: flex;
+  position: relative;
   justify-content: space-between;
 }
 
@@ -195,6 +194,16 @@
 
 .filters-price__input[type="number"] {
   appearance: textfield;
+}
+
+.filter-price__control-divider {
+  position: absolute;
+  height: 2px;
+  width: 8px;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #bdbdbd;
 }
 
 .filters-price__title {
