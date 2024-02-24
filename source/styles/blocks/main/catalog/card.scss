@@ -1,9 +1,16 @@
 .card {
   background-color: $white;
   padding: 20px;
+  padding-left: 18px;
 
   @media (min-width: $tablet-width) {
     padding: 30px;
+    padding-left: 28.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px;
+    padding-left: 28px;
   }
 }
 
@@ -25,6 +32,7 @@
   font-size: 18px;
   line-height: 32px;
   margin: 0;
+  padding-left: 2px;
   padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
@@ -34,6 +42,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 4px;
+    padding-left: 1.5px;
   }
 }
 
@@ -43,14 +52,14 @@
   font-size: 14px;
   line-height: 20px;
   margin: 0;
-  padding: 0 0 15px;
+  padding: 0 0 15.2px 2px;
 
   @media (min-width: $tablet-width) {
-    padding: 4px 0 19px;
+    padding: 4px 0 20px 1px
   }
 
   @media (min-width: $desktop-width) {
-    padding: 4px 0 21px;
+    padding: 5px 1.5px 20px;
   }
 }
 
@@ -68,8 +77,13 @@
   line-height: 32px;
 }
 
+.card__rub {
+  font-family: $montserrat-bold;
+  font-weight: 700;
+}
+
 .card__button {
-  width: 140px;
+  width: 141px;
   min-height: 36px;
   display: flex;
   align-items: center;

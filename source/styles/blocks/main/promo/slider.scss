@@ -9,7 +9,7 @@
 
 .slider__item {
   list-style: none;
-  padding: 18px 0 59px;
+  padding: 17px 0 59px;
   min-height: 654px;
 
   @media (min-width: $tablet-width) {
@@ -103,7 +103,7 @@
     justify-content: center;
     padding-bottom: 0;
     margin-left: 21px;
-    margin-top: 18px;
+    margin-top: 19px;
   }
 }
 
@@ -160,7 +160,7 @@
     max-width: $tablet-width;
     font-size: 20px;
     line-height: 32px;
-    padding: 15px 0 20px;
+    padding: 16px 0 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -190,7 +190,7 @@
   line-height: 32px;
   color: $base-primary;
   text-decoration: line-through;
-  padding-right: 10px;
+  padding-right: 7px;
 }
 
 .slider__price {
@@ -209,7 +209,6 @@
 .slider__rub--old {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
 
 .slider__button {

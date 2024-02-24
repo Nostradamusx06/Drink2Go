@@ -3,10 +3,5 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  padding: 0 0 2px;
   background-color: $white;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
 }
