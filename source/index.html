@@ -15,7 +15,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header" data-test="header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo" tabindex="0">
@@ -44,7 +44,7 @@
             </a>
           </li>
         </ul>
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle js-toggle-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -66,7 +66,7 @@
   </header>
   <div class="wrapper">
     <main class="main">
-      <section class="promo">
+      <section class="promo" data-test="hero">
         <h2 class="visually-hidden">Слайдер с новинками</h2>
         <section class="slider swiper">
           <ul class="slider__list swiper-wrapper">
@@ -96,8 +96,8 @@
                   </p>
                   <div class="slider__buy">
                     <div class="slider__price-wrapper">
-                      <span class="slider__old-price">295₽</span>
-                      <span class="slider__price">225₽</span>
+                      <span class="slider__old-price">295&#8381;</span>
+                      <span class="slider__price">225&#8381;</span>
                     </div>
                     <a class="slider__button" href="#catalog">Заказать</a>
                   </div>
@@ -176,14 +176,14 @@
             </li>
           </ul>
           <div class="slider__arrows">
-            <button class="slider__arrow slider__arrow--left swiper-button-prev" type="button"></button>
-            <button class="slider__arrow slider__arrow--right swiper-button-next" type="button"></button>
+            <button class="slider__arrow slider__arrow--left swiper-button-prev slider-button-prev" type="button"></button>
+            <button class="slider__arrow slider__arrow--right swiper-button-next slider-button-next" type="button"></button>
           </div>
-          <div class="slider__bullets swiper-pagination"></div>
+          <div class="slider__bullets swiper-pagination slider-pagination"></div>
 
         </section>
       </section>
-      <section class="features">
+      <section class="features" data-test="features">
         <div class="features__wrapper">
           <h2 class="features__title">Преимущества</h2>
           <h3 class="features__subtitle">Главные причины выбрать Drink2Go</h3>
@@ -227,7 +227,7 @@
           </ul>
         </div>
       </section>
-      <section class="catalog" id="catalog">
+      <section class="catalog" id="catalog" data-test="catalog">
         <div class="container">
           <h2 class="catalog__title">Каталог</h2>
           <h3 class="catalog__subtitle">Каталог кофейных напитков</h3>
@@ -237,7 +237,7 @@
 
               <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
 
-                <div class="filters__item filters-price">
+                <div class="filters-item filters-price">
                   <h3 class="filters-price__title">Цена</h3>
                   <div class="filters-price__slider" id="range-slider"></div>
                   <div class="filters-price__inputs">
@@ -245,7 +245,7 @@
                       <input type="number" min="0" max="1000" placeholder="0"
                         class="filters-price__input filters-price__input--min" id="input-min">
                     </label>
-                    <span class="filter-price__control-divider"></span>
+                    <span class="filters-price__control-divider"></span>
                     <label class="filters-price__label filters-price__label--max">
                       <input type="number" min="0" max="1000" placeholder="900" class="filters-price__input
                       filters-price__input--max" id="input-max">
@@ -538,7 +538,7 @@
         </div>
       </section>
 
-      <section class="map">
+      <section class="map" data-test="map">
         <picture>
           <source type="image/webp" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.webp 1x,
         images/map/map-desktop@2x.webp 2x">
@@ -556,7 +556,7 @@
         </picture>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <div class="footer__inner container">
         <div class="footer__wrapper">
           <a class="footer__logo" href="#">

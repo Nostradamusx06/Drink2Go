@@ -13,18 +13,16 @@ if (rangeSlider) {
   const inputMin = document.getElementById("input-min");
   const inputMax = document.getElementById("input-max");
   const inputs = [inputMin, inputMax];
-  rangeSlider.noUiSlider.on("update", function(values, handle) {
+  rangeSlider.noUiSlider.on("update", (values, handle) => {
     inputs[handle].value = Math.round(values[handle]);
   });
   const setRangeSlider = (i, value) => {
-    let arr = [null, null];
+    const arr = [null, null];
     arr[i] = value;
-    console.log(arr);
     rangeSlider.noUiSlider.set(arr);
   };
   inputs.forEach((el, index) => {
     el.addEventListener("change", (e) => {
-      console.log(index);
       setRangeSlider(index, e.currentTarget.value);
     });
   });

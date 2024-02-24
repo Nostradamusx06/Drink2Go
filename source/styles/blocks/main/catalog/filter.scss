@@ -168,7 +168,6 @@
 }
 
 .filters-price {
-
   @media (min-width: $tablet-width) {
     width: 223px;
   }
@@ -224,15 +223,12 @@
 
   @media (min-width: $desktop-width) {
     padding: 9px 57.5px 7px;
-
   }
 }
 
 .filters-price__label--max {
-
   @media (min-width: $desktop-width) {
     padding: 9px 47.5px 7px;
-
   }
 }
 
@@ -241,15 +237,14 @@
   font-size: 16px;
   line-height: 24px;
   border: none;
-  color: #4D4D4D;
+  color: #4d4d4d;
   background-color: inherit;
-  font-size: 16px;
 }
 
 
 .filters-price__input ::-webkit-outer-spin-button,
 .filters-price__input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -257,7 +252,7 @@
   appearance: textfield;
 }
 
-.filter-price__control-divider {
+.filters-price__control-divider {
   position: absolute;
   height: 2px;
   width: 8px;
@@ -313,7 +308,7 @@
   width: 24px;
   height: 24px;
   top: -10px;
-  right: -24px
+  right: -24px;
 }
 
 .noUi-horizontal .noUi-handle-upper {
