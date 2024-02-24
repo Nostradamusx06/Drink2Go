@@ -21,6 +21,7 @@
 
 .card__title {
   font-family: $montserrat-bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 32px;
   margin: 0;
@@ -38,6 +39,7 @@
 
 .card__description {
   font-family: $montserrat-regular;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
@@ -61,6 +63,7 @@
 
 .card__price {
   font-family: $montserrat-semi-bold;
+  font-weight: 600;
   font-size: 20px;
   line-height: 32px;
 }
@@ -73,6 +76,7 @@
   justify-content: space-between;
   padding: 8px 20px;
   font-family: $montserrat-regular;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: $white;

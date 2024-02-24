@@ -109,6 +109,7 @@
 
 .slider__badge {
   font-family: $montserrat-bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.04em;
@@ -127,6 +128,7 @@
 
 .slider__heading {
   font-family: $montserrat-bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0.02em;
@@ -147,6 +149,7 @@
 .slider__description {
   max-width: $mobile-width;
   font-family: $montserrat-regular;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -182,6 +185,7 @@
 
 .slider__old-price {
   font-family: $montserrat-regular;
+  font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   color: $base-primary;
@@ -191,6 +195,7 @@
 
 .slider__price {
   font-family: $montserrat-semi-bold;
+  font-weight: 600;
   font-size: 20px;
   line-height: 32px;
   text-decoration: none;
@@ -198,6 +203,7 @@
 
 .slider__button {
   font-family: $montserrat-regular;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   padding: 8px 20px;
