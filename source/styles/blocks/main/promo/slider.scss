@@ -201,6 +201,16 @@
   text-decoration: none;
 }
 
+.slider__rub {
+  font-family: $montserrat-bold;
+  font-weight: 700;
+}
+
+.slider__rub--old {
+  font-family: $montserrat-regular;
+  font-weight: 400;
+}
+
 .slider__button {
   font-family: $montserrat-regular;
   font-weight: 400;
