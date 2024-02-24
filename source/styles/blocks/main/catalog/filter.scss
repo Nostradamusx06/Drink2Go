@@ -1,7 +1,7 @@
 .filter__form {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-areas:
+    grid-template:
       "price fieldsets"
       "buttons buttons";
     grid-template-columns: 230px 1fr;
@@ -250,6 +250,10 @@
 
 .filters-price__input[type="number"] {
   appearance: textfield;
+}
+
+.filters-price__input--min {
+  color: #bdbdbd;
 }
 
 .filters-price__control-divider {

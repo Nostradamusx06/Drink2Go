@@ -9,8 +9,6 @@
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-  <link rel="stylesheet" href="vendor/nouislider.min.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -18,10 +16,11 @@
   <header class="header" data-test="header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
-        <a class="main-nav__logo" tabindex="0">
+        <a class="main-nav__logo" href="#" tabindex="0">
           <picture>
-            <source media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="170" height="36">
-            <source media="(min-width:768px)" srcset="images/logo-tablet.svg" width="82" height="36">
+            <source media="(min-width:1440px)" srcset="images/logo-desktop.svg" type="image/svg" width="170"
+              height="36">
+            <source media="(min-width:768px)" srcset="images/logo-tablet.svg" type="image/svg" width="82" height="36">
             <img src="images/logo.svg" width="32" height="36" alt="Логотип Drink2Go.">
           </picture>
         </a>
@@ -176,8 +175,10 @@
             </li>
           </ul>
           <div class="slider__arrows">
-            <button class="slider__arrow slider__arrow--left swiper-button-prev slider-button-prev" type="button"></button>
-            <button class="slider__arrow slider__arrow--right swiper-button-next slider-button-next" type="button"></button>
+            <button class="slider__arrow slider__arrow--left swiper-button-prev slider-button-prev"
+              type="button"></button>
+            <button class="slider__arrow slider__arrow--right swiper-button-next slider-button-next"
+              type="button"></button>
           </div>
           <div class="slider__bullets swiper-pagination slider-pagination"></div>
 
@@ -538,7 +539,7 @@
         </div>
       </section>
 
-      <section class="map" data-test="map">
+      <div class="map" data-test="map">
         <picture>
           <source type="image/webp" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.webp 1x,
         images/map/map-desktop@2x.webp 2x">
@@ -554,7 +555,7 @@
           <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" alt="Карта." width="320"
             height="420">
         </picture>
-      </section>
+      </div>
     </main>
     <footer class="footer" data-test="footer">
       <div class="footer__inner container">
