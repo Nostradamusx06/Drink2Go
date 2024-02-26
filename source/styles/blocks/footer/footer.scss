@@ -18,7 +18,7 @@
   position: relative;
   align-items: center;
   justify-content: space-between;
-  padding: 17px 0;
+  padding: 19px 0;
 
   &::after {
     content: "";
@@ -32,7 +32,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 36px;
+    padding-top: 40px;
     padding-bottom: 18px;
     border: 0;
 
@@ -44,7 +44,7 @@
   @media (min-width: $desktop-width) {
     grid-area: wrapper;
     display: flex;
-    padding-top: 35px;
+    padding-top: 40px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 41px;
+  margin-top: 45px;
 
   @media (min-width: $tablet-width) {
     margin-top: 41px;
@@ -53,20 +53,12 @@
     width: 10px;
     height: 10px;
     background-image: url("../../images/sprite.svg#select-arrow");
-    top: 11px;
-    right: 11px;
-  }
-}
+    top: 9px;
+    right: 21px;
 
-.sorting__select svg {
-  position: absolute;
-  top: 56%;
-  transform: translateY(-50%);
-  right: 11px;
-
-  &:active {
-    .sorting__select svg {
-      transform: scaleY(-1);
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      right: 10px;
     }
   }
 }
@@ -85,11 +77,14 @@
   appearance: none;
   width: 165px;
   padding-right: 27px;
-  padding-left: 10px;
 
   &:hover,
   &:focus {
     background-color: $base-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 11px;
   }
 }
 
