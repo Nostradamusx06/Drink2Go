@@ -30,7 +30,8 @@
   padding-left: 4px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 11px;
+    padding-right: 1px;
+    padding-top: 4px;
   }
 }
 
@@ -82,9 +83,9 @@
   cursor: pointer;
   white-space: nowrap;
   appearance: none;
-  min-height: 28px;
-  width: 156px;
+  width: 165px;
   padding-right: 27px;
+  padding-left: 10px;
 
   &:hover,
   &:focus {
