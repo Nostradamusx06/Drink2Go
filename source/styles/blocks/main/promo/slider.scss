@@ -270,10 +270,11 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: url("../../images/arrow.svg");
+    background-image: url("../../images/sprite.svg#arrow");
     background-repeat: no-repeat;
     background-size: 21px;
     background-position: center;
+    top: 48.5%;
     background-color: transparent;
     z-index: 2;
   }
@@ -304,7 +305,7 @@
 
   &:disabled {
     &::after {
-      background-image: url("../../images/arrow-grey.svg");
+      background-image: url("../../images/sprite.svg#arrow-grey");
     }
   }
 }
