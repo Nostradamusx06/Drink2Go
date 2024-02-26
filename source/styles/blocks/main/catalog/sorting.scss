@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
   }
+
 }
 
 .sorting__wrapper {
@@ -30,16 +31,30 @@
   padding-left: 4px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 1px;
+    padding-right: 11px;
   }
 }
 
 .sorting__select {
+  display: inline-block;
   position: relative;
   margin-left: 9px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    background-image: url("../../images/sprite.svg#select-arrow");
+    top: 11px;
+    right: 11px;
   }
 }
 
@@ -57,7 +72,6 @@
 }
 
 .sorting__values {
-  display: block;
   font-family: $montserrat-semi-bold;
   font-weight: 600;
   font-size: 16px;
@@ -67,12 +81,11 @@
   border: none;
   outline: none;
   cursor: pointer;
-  white-space: wrap;
+  white-space: nowrap;
   appearance: none;
-  min-height: 32px;
-  width: 165px;
-  padding-left: 10px;
-
+  min-height: 28px;
+  width: 156px;
+  padding-right: 27px;
 
   &:hover,
   &:focus {
@@ -86,4 +99,5 @@
   color: $base-black;
   font-size: 16px;
   line-height: 24px;
+
 }
