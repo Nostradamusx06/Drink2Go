@@ -35,6 +35,10 @@
   color: $base-primary;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 6px;
+  }
 }
 
 .features__subtitle {
@@ -75,7 +79,9 @@
 }
 
 .features__item {
+  position: relative;
   text-align: center;
+  padding-top: 60px;
   padding-bottom: 32px;
   list-style: none;
 
@@ -83,7 +89,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     text-align: left;
-    padding-bottom: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,6 +101,7 @@
 
   &::before {
     content: "";
+    position: absolute;
     min-width: 70px;
     height: 60px;
     background-repeat: no-repeat;
@@ -102,39 +109,73 @@
     margin-right: 20px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 8px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 18px;
-      margin-top: 0;
+      top: 0;
+      right: 0;
+      margin: 0;
+      position: static;
     }
   }
 
   &--speed::before {
-    background-position: 19px 1px;
+    top: 0;
+    right: 30%;
     background-image: url("../../images/sprite.svg#speed");
+
+    @media (min-width: $tablet-width) {
+      background-position: 1px 9px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 9px 0;
+    }
   }
 
   &--fit::before {
-    background-position: 19px 1px;
+    top: 0;
+    right: 30%;
     background-image: url("../../images/sprite.svg#fit");
+
+    @media (min-width: $tablet-width) {
+      background-position: 1px 5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 9px 0;
+    }
   }
 
   &--energy::before {
-    background-position: 19px 1px;
+    top: 0;
+    right: 30%;
     background-image: url("../../images/sprite.svg#energy");
+
+    @media (min-width: $tablet-width) {
+      background-position: 1px 5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 9px 0;
+    }
   }
 
   &--ecology::before {
-    background-position: 19px 1px;
+    top: 0;
+    right: 30%;
     background-image: url("../../images/sprite.svg#ecology");
+
+    @media (min-width: $tablet-width) {
+      background-position: 1px 9px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 9px 0;
+    }
   }
 }
 
 .features__item-wrapper {
   @media (min-width: $tablet-width) {
-    padding-left: 21px;
+    padding-left: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -158,7 +199,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 10px;
-    padding-top: 0;
+    padding-top: 16px;
   }
 }
 
