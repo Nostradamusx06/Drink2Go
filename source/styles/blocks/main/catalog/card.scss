@@ -46,6 +46,11 @@
   }
 }
 
+.card__title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card__description {
   font-family: $montserrat-regular;
   font-weight: 400;
@@ -96,6 +101,7 @@
   color: $white;
   background-color: $base-primary;
   border-radius: 4px;
+  text-decoration: none;
 
 
   &::before {

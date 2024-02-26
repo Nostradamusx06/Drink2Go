@@ -221,6 +221,7 @@
   border-radius: 4px;
   background-color: $base-primary;
   color: $white;
+  text-decoration: none;
 
   &:not(.slider__button--disabled):hover,
   &:not(.slider__button--disabled):focus {

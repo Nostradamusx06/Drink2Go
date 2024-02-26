@@ -39,7 +39,11 @@
   }
 }
 
-
-.contacts-list__list-text {
+.contacts-list__text {
   padding-bottom: 13px;
+}
+
+.contacts-list__link {
+  text-decoration: none;
+  color: inherit;
 }
