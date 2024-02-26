@@ -30,7 +30,7 @@
   padding-left: 4px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 11px;
+    padding-right: 1px;
   }
 }
 
@@ -67,11 +67,11 @@
   border: none;
   outline: none;
   cursor: pointer;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  white-space: wrap;
   appearance: none;
-  height: 32px;
-  width: 155px;
+  min-height: 32px;
+  width: 165px;
+  padding-left: 10px;
 
 
   &:hover,
