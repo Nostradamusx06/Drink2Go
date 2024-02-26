@@ -1,0 +1,53 @@
+.noUi-connect {
+  background-color: #9070ec;
+}
+
+.noUi-target {
+  background-color: #bfbfbf;
+  border: none;
+  border-radius: 100px;
+  box-shadow: none;
+  height: 4px;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+.noUi-handle {
+  cursor: pointer;
+  box-shadow: none;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border: 2px solid #9070ec;
+
+  &:hover,
+  &:focus {
+    background: radial-gradient(circle, rgba(221, 213, 243, 1) 57%, rgba(255, 255, 255, 1) 58%);
+  }
+
+  &:active {
+    background: radial-gradient(circle, rgba(120, 89, 207, 1) 57%, rgba(255, 255, 255, 1) 58%);
+    border: 2px solid #7859cf;
+  }
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  right: -24px;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+  right: -8px;
+
+  @media (min-width: $tablet-width) {
+    right: -2.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -11.5px;
+  }
+}
