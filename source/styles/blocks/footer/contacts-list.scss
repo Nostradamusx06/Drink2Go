@@ -7,6 +7,7 @@
 }
 
 .contacts-list__item {
+  position: relative;
   display: flex;
   gap: 6px;
   font-family: $montserrat-medium;
@@ -15,7 +16,29 @@
   padding-bottom: 3px;
   text-transform: none;
   list-style: none;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 16px;
+    z-index: 1;
+    top: 3px;
+    left: 1px;
+  }
+
+  &--pin::before {
+    background-image: url("../../images/sprite.svg#pin");
+  }
+
+  &--phone::before {
+    background-image: url("../../images/sprite.svg#phone");
+  }
 }
+
 
 .contacts-list__list-text {
   padding-bottom: 13px;

@@ -97,6 +97,17 @@
   background-color: $base-primary;
   border-radius: 4px;
 
+
+  &::before {
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 20px;
+    height: 16px;
+    background-image: url("../../images/sprite.svg#basket-button");
+  }
+
   &:not(.card__button--disabled):hover,
   &:not(.card__button--disabled):focus {
     background-color: $primary-lighter;
