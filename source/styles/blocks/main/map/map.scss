@@ -1,8 +1,10 @@
 .map {
   min-height: 420px;
+  background-color: $primary-lighter;
 }
 
 .map img {
   aspect-ratio: auto;
+  vertical-align: bottom;
   width: 100%;
 }
