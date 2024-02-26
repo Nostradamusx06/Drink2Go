@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["source/scripts/index.js"],
+  "sourcesContent": ["const mobileMenu = () => {\n  const mainNav = document.querySelector('.main-nav');\n  const navToggle = document.querySelector('.main-nav__toggle');\n\n  mainNav.classList.remove('main-nav--nojs');\n\n  navToggle.addEventListener('click', () => {\n    mainNav.classList.toggle('main-nav--closed');\n    mainNav.classList.toggle('main-nav--opened');\n  });\n};\n\nmobileMenu();\n"],
+  "mappings": ";AAAA,IAAM,aAAa,MAAM;AACvB,QAAM,UAAU,SAAS,cAAc,WAAW;AAClD,QAAM,YAAY,SAAS,cAAc,mBAAmB;AAE5D,UAAQ,UAAU,OAAO,gBAAgB;AAEzC,YAAU,iBAAiB,SAAS,MAAM;AACxC,YAAQ,UAAU,OAAO,kBAAkB;AAC3C,YAAQ,UAAU,OAAO,kBAAkB;AAAA,EAC7C,CAAC;AACH;AAEA,WAAW;",
+  "names": []
+}
