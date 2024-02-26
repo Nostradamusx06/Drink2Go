@@ -21,6 +21,8 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 82px;
+    min-height: 370px;
+
   }
 }
 
@@ -91,16 +93,43 @@
     text-align: center;
     justify-items: center;
   }
-}
 
-.features__item-img {
-  @media (min-width: $tablet-width) {
-    margin-top: 8px;
+  &::before {
+    content: "";
+    min-width: 70px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 18px;
+      margin-top: 0;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 21px;
-    margin-top: 0;
+  &--speed::before {
+    background-position: 19px 1px;
+    background-image: url("../../images/sprite.svg#speed");
+  }
+
+  &--fit::before {
+    background-position: 19px 1px;
+    background-image: url("../../images/sprite.svg#fit");
+  }
+
+  &--energy::before {
+    background-position: 19px 1px;
+    background-image: url("../../images/sprite.svg#energy");
+  }
+
+  &--ecology::before {
+    background-position: 19px 1px;
+    background-image: url("../../images/sprite.svg#ecology");
   }
 }
 
