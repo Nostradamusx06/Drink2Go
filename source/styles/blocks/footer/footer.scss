@@ -62,7 +62,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    font-family: $montserrat-regular;
+    font-family: $montserrat;
     font-weight: 400;
     color: $base-black;
     font-size: 14px;
@@ -76,7 +76,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: $montserrat-regular;
+  font-family: $montserrat;
   font-weight: 400;
   color: $base-grey;
   font-size: 12px;
