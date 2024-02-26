@@ -46,7 +46,7 @@
 
 .main-nav__slogan {
   display: none;
-  font-family: $montserrat;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -81,8 +81,6 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  width: 16px;
-  height: 12px;
   background-image: url("../../images/sprite.svg#burger");
   background-repeat: no-repeat;
 }
