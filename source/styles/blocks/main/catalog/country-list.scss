@@ -44,6 +44,10 @@
   background-image: url("../../images/sprite.svg#checkbox-hover-focus");
 }
 
+.country-list__input:not(:checked):focus + .country-list__checkbox {
+  background-image: url("../../images/sprite.svg#checkbox-hover-focus");
+}
+
 .country-list__input:disabled + .country-list__checkbox {
   background-image: url("../../images/sprite.svg#checkbox-disabled");
 }

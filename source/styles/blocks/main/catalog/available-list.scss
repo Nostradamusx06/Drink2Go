@@ -41,6 +41,10 @@
   background-image: url("../../images/sprite.svg#radio-hover-focus");
 }
 
+.available-list__input:not(:checked):focus + .available-list__radio {
+  background-image: url("../../images/sprite.svg#radio-hover-focus");
+}
+
 .available-list__input:disabled + .available-list__radio,
 .available-list__input:disabled:hover + .available-list__radio {
   background-image: url("../../images/sprite.svg#radio-disabled");
